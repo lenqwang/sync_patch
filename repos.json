@@ -1,0 +1,8 @@
+{
+  "repos": [
+    { "repoName": "AA", "targetBranchName": "feature/v1" },
+    { "repoName": "BB", "originBranchName": "master", "targetBranchName": "feature/v2" },
+    { "repoName": "CC", "originBranchName": "feature/v1", "alias": "folder Name of CC in your locale", "targetBranchName": "feature/xxx/sync-patch" }
+  ],
+  "patch": "DD/*.patch"
+}
