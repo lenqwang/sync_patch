@@ -3,10 +3,10 @@
 async function main() {
   const _title = await nothrow($`git log -1 --pretty=%B`)
   const _assign = await nothrow($`git config --get user.name`)
-  const target_branch = argv['target_branch' || 'b'] || 'master'
-  const title = argv['title' || 't'] || _title
-  const assign = argv['assign' || 'a'] || _assign
-  const description = argv['description' || 'd'] || ``
+  const target_branch = argv['target_branch'] || argv['b'] || 'master'
+  const title = argv['title'] || argv['t'] || _title
+  const assign = argv['assign'] || argv['a'] || _assign
+  const description = argv['description'] || argv['d'] || ''
 
   console.log('target_branch: ', target_branch)
   console.log('title: ', title)
